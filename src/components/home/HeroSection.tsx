@@ -92,7 +92,8 @@ export function HeroSection() {
             className="relative animate-slide-up lg:animate-float"
             style={{ animationDelay: "0.3s" }}
           >
-            <div className="relative z-10 rounded-2xl overflow-hidden border border-border/50 shadow-2xl">
+            {/* Image container - z-0 to be behind badges */}
+            <div className="relative z-0 rounded-2xl overflow-hidden border border-border/50 shadow-2xl">
               <img
                 src={heroImage}
                 alt="Maison connectée intelligente avec contrôle domotique"
@@ -102,8 +103,8 @@ export function HeroSection() {
               <div className="absolute inset-0 bg-gradient-to-t from-background/60 via-transparent to-transparent" />
             </div>
 
-            {/* Floating Cards */}
-            <div className="absolute -left-6 top-1/4 card-glass rounded-xl p-4 shadow-xl animate-float hidden md:block" style={{ animationDelay: "1s" }}>
+            {/* Floating Cards - z-20 to be above image */}
+            <div className="absolute -left-6 top-1/4 z-20 card-glass rounded-xl p-4 shadow-xl animate-float hidden md:block" style={{ animationDelay: "1s" }}>
               <div className="flex items-center gap-3">
                 <div className="p-2 rounded-lg bg-primary/20">
                   <Shield className="h-6 w-6 text-primary" />
@@ -115,7 +116,7 @@ export function HeroSection() {
               </div>
             </div>
 
-            <div className="absolute -right-6 top-1/2 card-glass rounded-xl p-4 shadow-xl animate-float hidden md:block" style={{ animationDelay: "1.5s" }}>
+            <div className="absolute -right-6 top-1/2 z-20 card-glass rounded-xl p-4 shadow-xl animate-float hidden md:block" style={{ animationDelay: "1.5s" }}>
               <div className="flex items-center gap-3">
                 <div className="p-2 rounded-lg bg-dsts-green/20">
                   <Zap className="h-6 w-6 text-dsts-green" />
@@ -127,7 +128,7 @@ export function HeroSection() {
               </div>
             </div>
 
-            <div className="absolute -bottom-4 left-1/4 card-glass rounded-xl p-4 shadow-xl animate-float hidden md:block" style={{ animationDelay: "2s" }}>
+            <div className="absolute -bottom-4 left-1/4 z-20 card-glass rounded-xl p-4 shadow-xl animate-float hidden md:block" style={{ animationDelay: "2s" }}>
               <div className="flex items-center gap-3">
                 <div className="p-2 rounded-lg bg-dsts-amber/20">
                   <Home className="h-6 w-6 text-dsts-amber" />
