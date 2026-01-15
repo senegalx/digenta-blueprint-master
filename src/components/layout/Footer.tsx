@@ -1,5 +1,5 @@
 import { Link } from "react-router-dom";
-import { Mail, Phone, MapPin, Linkedin, Facebook, Twitter } from "lucide-react";
+import { Mail, Phone, MapPin, Facebook, Instagram } from "lucide-react";
 import logo from "@/assets/logo-dsts.png";
 
 const footerLinks = {
@@ -35,15 +35,8 @@ export function Footer() {
               Digenta Smart Telecom Solution transforme vos espaces en environnements intelligents, sécurisés et économiques.
             </p>
             <div className="flex gap-4">
-              <a
-                href="#"
-                className="p-2 rounded-lg bg-muted hover:bg-primary hover:text-primary-foreground transition-all duration-300"
-                aria-label="LinkedIn"
-              >
-                <Linkedin className="h-5 w-5" />
-              </a>
-              <a
-                href="#"
+                <a
+                href="https://www.facebook.com/share/17iYzJhg4J/"
                 className="p-2 rounded-lg bg-muted hover:bg-primary hover:text-primary-foreground transition-all duration-300"
                 aria-label="Facebook"
               >
@@ -54,7 +47,7 @@ export function Footer() {
                 className="p-2 rounded-lg bg-muted hover:bg-primary hover:text-primary-foreground transition-all duration-300"
                 aria-label="Twitter"
               >
-                <Twitter className="h-5 w-5" />
+                <Instagram className="h-5 w-5" />
               </a>
             </div>
           </div>
