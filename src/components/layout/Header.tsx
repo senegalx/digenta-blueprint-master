@@ -122,7 +122,7 @@ export function Header() {
           {/* CTA Button */}
           <div className="hidden lg:block">
             <Button variant="hero" size="default" asChild>
-              <Link to="/contact">Devis Gratuit</Link>
+              <a href="https://wa.me/message/25YLNGBPSDQHC1" target="_blanc">Devis Gratuit</a>
             </Button>
           </div>
 
@@ -170,7 +170,7 @@ export function Header() {
               ))}
               <div className="px-4 pt-4">
                 <Button variant="hero" size="lg" className="w-full" asChild>
-                  <Link to="/contact">Devis Gratuit</Link>
+                  <a href="https://wa.me/message/25YLNGBPSDQHC1" target="_blanc">Devis Gratuit</a>
                 </Button>
               </div>
             </div>
