@@ -57,10 +57,10 @@ export function HeroSection() {
               style={{ animationDelay: "0.3s" }}
             >
               <Button variant="hero" size="xl" asChild>
-                <Link to="/contact">
+                <a href="https://wa.me/message/25YLNGBPSDQHC1" target="_blanc">
                   Demander un devis
                   <ArrowRight className="h-5 w-5" />
-                </Link>
+                </a>
               </Button>
               <Button variant="heroOutline" size="xl" asChild>
                 <Link to="/solutions">Découvrir nos solutions</Link>

@@ -32,10 +32,10 @@ export function CTASection() {
 
             <div className="flex flex-col sm:flex-row gap-4 justify-center">
               <Button variant="hero" size="xl" asChild>
-                <Link to="/contact">
+                <a to="https://wa.me/message/25YLNGBPSDQHC1" target="_blanc">
                   Demander un devis gratuit
                   <ArrowRight className="h-5 w-5" />
-                </Link>
+                </a>
               </Button>
               <Button variant="heroOutline" size="xl" asChild>
                 <a href="tel:+221781979191">
